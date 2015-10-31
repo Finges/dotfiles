@@ -1,0 +1,64 @@
+config defaultToCurrentScreen true
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+
+# Monitor Aliases
+alias mon-laptop	1280x800
+alias mon-desktop	1920x1080
+alias mon-desktop2 1920x1080
+
+# Position Aliases
+alias full 				move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf 			move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf 		move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft 			corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright 			corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft 		corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright 		corner bottom-right resize:screenSizeX/2;screenSizeY/2
+alias brthird corner 	bottom-right resize:screenSizeX/2;screenSizeY/3
+alias toprighttwothird 	corner top-right resize:screenSizeX/2;2*screenSizeY/3
+alias toptwothird corner top-left resize:screenSizeX;2*screenSizeY/3
+alias blquarter corner bottom-left resize:screenSizeX/2;screenSizeY/4
+alias brquarter corner bottom-right resize:screenSizeX/2;screenSizeY/4
+alias bottomthird corner bottom-left resize:screenSizeX;screenSizeY/3
+
+alias 2-brthird move screenOriginX+screenSizeX/2;screenOriginY+2*screenSizeY/3 screenSizeX/2;screenSizeY/3 0
+alias 2-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY 0
+alias 2-toprighttwothird move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;2*screenSizeY/3 0
+
+# Work Layout
+layout work 'iTerm':SORT_TITLE,TITLE_ORDER_REGEX=apps,REPEAT_LAST ${2-brthird} | throw ${mon-desktop}
+layout work 'Microsoft Outlook' ${2-lefthalf}
+layout work 'Slack' ${2-toprighttwothird}
+
+# Default Layouts
+default work resolutions:${mon-laptop};${mon-desktop};${mon-desktop2}
+
+alias hyper ctrl;shift;alt;cmd
+
+bind 1:${hyper} layout work
+
+bind right:${hyper} chain ${righthalf} | throw next | ${lefthalf} 
+bind left:${hyper}  chain ${lefthalf} | throw next | ${righthalf}
+bind up:${hyper} ${full}
+
+bind r:${hyper} ${topright}
+bind e:${hyper} ${topleft}
+bind f:${hyper} ${bottomright}
+bind d:${hyper} ${bottomleft}
+bind t:${hyper} ${toprighttwothird}
+bind g:${hyper} ${brthird}
+
+bind q:${hyper} ${toptwothird}
+bind a:${hyper} ${bottomthird}
+bind s:${hyper} ${brquarter}
+
+bind h:${hyper} focus left
+bind l:${hyper} focus right
+bind k:${hyper} focus up
+bind j:${hyper} focus down
+
+bind i:${hyper} hint ASDFGHJKLQWERTYUIOPCVBN
+
+bind p:${hyper} move screenOriginX;screenOriginY screenSizeX/2;screenSizeY 2
