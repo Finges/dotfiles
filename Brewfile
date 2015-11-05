@@ -15,4 +15,7 @@ cask install karabiner
 cask install google-chrome
 cask install iterm
 cask install atom
+cask install vlc
+cask install virtualbox
+cask install dockertoolbox
 

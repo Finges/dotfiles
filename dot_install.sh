@@ -4,7 +4,8 @@
 mkdir -p ~/.config
 
 # Symlinks
-
+# GIT
+ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 # ZSH
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc
