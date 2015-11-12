@@ -28,7 +28,7 @@ ln -svf ~/.dotfiles/powerline ~/.config/powerline
 unlink ~/.vim
 ln -svf ~/.dotfiles/vim ~/.vim
 ln -svf ~/.dotfiles/vim/vimrc ~/.vimrc
-vim +PluginInstall +qall
+vim -u ~/.vim/bundle.vim +PluginInstall +qall
 
 ### OSX Only ###
 # Slate
