@@ -3,7 +3,7 @@ set nocompatible
 "--[ Pathogen Setup ] --"
 call pathogen#infect()
 
-
+source $HOME/.vim/bundle.vim
 "--[ Vundle Setup ]--"
 "Auto installs Vundle and activates it, then it installs all your bundles"
 

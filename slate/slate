@@ -29,7 +29,7 @@ alias 2-toprighttwothird move screenOriginX+screenSizeX/2;screenOriginY screenSi
 
 # Work Layout
 layout work 'iTerm':SORT_TITLE,TITLE_ORDER_REGEX=apps,REPEAT_LAST ${2-brthird} | throw ${mon-desktop}
-layout work 'Microsoft Outlook' ${2-lefthalf}
+layout work 'Airmail' ${2-lefthalf}
 layout work 'Slack' ${2-toprighttwothird}
 
 # Default Layouts
