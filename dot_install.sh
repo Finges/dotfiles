@@ -31,8 +31,8 @@ ln -svf ~/.dotfiles/vim/vimrc ~/.vimrc
 #vim -u ~/.vim/bundle.vim +PluginInstall +qall
 
 ### OSX Only ###
-# Slate
-ln -svf ~/.dotfiles/slate/slate ~/.slate
+## Slate
+#ln -svf ~/.dotfiles/slate/slate ~/.slate
 
-# Karabiner
-ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
+## Karabiner
+#ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
