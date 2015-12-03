@@ -3,6 +3,7 @@ install coreutils
 install python
 install reattach-to-user-namespace
 install pianobar
+install ssh-copy-id
 
 brew install caskroom/cask/brew-cask
 cask install slate
