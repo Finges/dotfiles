@@ -24,12 +24,12 @@ alias brquarter corner bottom-right resize:screenSizeX/2;screenSizeY/4
 alias bottomthird corner bottom-left resize:screenSizeX;screenSizeY/3
 
 alias 2-brthird move screenOriginX+screenSizeX/2;screenOriginY+2*screenSizeY/3 screenSizeX/2;screenSizeY/3 0
-alias 2-lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY 0
+alias 2-toplefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY 0
 alias 2-toprighttwothird move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;2*screenSizeY/3 0
 
 # Work Layout
 layout work 'iTerm':SORT_TITLE,TITLE_ORDER_REGEX=apps,REPEAT_LAST ${2-brthird} | throw ${mon-desktop}
-layout work 'Airmail' ${2-lefthalf}
+layout work 'Microsoft Outlook' ${2-toplefthalf}
 layout work 'Slack' ${2-toprighttwothird}
 
 # Default Layouts
