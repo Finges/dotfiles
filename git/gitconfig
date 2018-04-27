@@ -1,3 +1,7 @@
 [user]
 	name = Chris Lee
-	email = "(none)"
+	email = christopher.lee@concur.com
+[url "git@github.concur.com:"]
+	insteadOf = https://github.concur.com
+[core]
+	editor = vim

@@ -28,6 +28,9 @@ ln -svf ~/.dotfiles/powerline ~/.config/powerline
 unlink ~/.vim
 ln -svf ~/.dotfiles/vim ~/.vim
 ln -svf ~/.dotfiles/vim/vimrc ~/.vimrc
+cp ~/.dotfiles/vim/vimpasswords ~/.vimpasswords
+
+echo "Fill out your Vim Passwords in the ~/.vimpasswords file"
 #vim -u ~/.vim/bundle.vim +PluginInstall +qall
 
 ### OSX Only ###

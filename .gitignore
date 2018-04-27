@@ -1,2 +1,4 @@
 *.swp
 tmux/plugins/
+vim/bundle/
+vim/bundle.old/
