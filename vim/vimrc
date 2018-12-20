@@ -64,13 +64,13 @@ source $HOME/.vim/bundle.vim
 
 
 "--[ Powerline Setup via pip install]--"
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 
 
 set laststatus=2
-set rtp+=/home/finges/.local/lib/python3.3/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/lib/python3.6/site-packages/powerline/bindings/vim
 "-- [GUI setup ]--"
 syntax on                   " Set syntax highlighting on
 set backspace=indent,eol,start  " Backspace
