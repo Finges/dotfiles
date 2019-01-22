@@ -39,3 +39,11 @@ echo "Fill out your Vim Passwords in the ~/.vimpasswords file"
 
 ## Karabiner
 #ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
+
+## VSCode
+ln -svf ~/.dotfiles/vscode/* ~/Library/Application\ Support/Code/User/.
+~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension aws-scripting-guy.cform
+~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension PeterJausovec.vscode-docker
+~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode.Go                                                                                  │~
+~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension redhat.vscode-yaml                                                                            │~
+~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension vscodevim.vim

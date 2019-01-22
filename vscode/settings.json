@@ -1,0 +1,34 @@
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "editor.fontFamily": "'Inconsolata-dz for Powerline dz',Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "window.zoomLevel": 1,
+    "editor.rulers": [
+        80
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#073642"
+    },
+    "yaml.customTags": [
+        "!And",
+        "!If",
+        "!Not",
+        "!Equals",
+        "!Or",
+        "!FindInMap",
+        "!Base64",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!Select",
+        "!Split",
+        "!Join"
+    ],
+    // Enable/disable default YAML formatter (requires restart)
+    "yaml.format.enable": true,
+    "[yaml]": {},
+    "vim.useSystemClipboard": true
+}
