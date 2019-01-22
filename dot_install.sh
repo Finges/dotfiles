@@ -43,6 +43,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 unlink ~/.config/powerline
 ln -svf ~/.dotfiles/powerline ~/.config/powerline
 
+# Karabiner
+ln -s ~/.dotfiles/karabiner .
+
 # VIM
 unlink ~/.vim
 ln -svf ~/.dotfiles/vim ~/.vim
