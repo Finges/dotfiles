@@ -3,9 +3,25 @@
 # Create .config folder
 mkdir -p ~/.config
 
-# Symlinks
+### OSX Only ###
+## Install Apps
+#brew cask install --force iterm
+#brew cask install --force alfred
+#brew cask install --force  visual-studio-code
+#brew cask install --force karabiner-elements
+#brew cask install --force slate
+#brew cask install --force divvy
+#brew cask install --force spotify
+#brew install zsh
+#brew install tmux
+## Slate
+#ln -svf ~/.dotfiles/slate/slate ~/.slate
+## Karabiner
+#ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
+
+#### Symlinks
 # GIT
-ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
+# ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 # ZSH
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc
@@ -33,12 +49,6 @@ cp ~/.dotfiles/vim/vimpasswords ~/.vimpasswords
 echo "Fill out your Vim Passwords in the ~/.vimpasswords file"
 #vim -u ~/.vim/bundle.vim +PluginInstall +qall
 
-### OSX Only ###
-## Slate
-#ln -svf ~/.dotfiles/slate/slate ~/.slate
-
-## Karabiner
-#ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
 
 ## VSCode
 ln -svf ~/.dotfiles/vscode/* ~/Library/Application\ Support/Code/User/.
