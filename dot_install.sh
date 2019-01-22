@@ -3,9 +3,10 @@
 # Create .config folder
 mkdir -p ~/.config
 
+
 ### OSX Only ###
 ## Install Apps
-#brew cask install --force iterm
+#brew cask install --force iterm2
 #brew cask install --force alfred
 #brew cask install --force  visual-studio-code
 #brew cask install --force karabiner-elements
@@ -24,6 +25,8 @@ mkdir -p ~/.config
 # ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 # ZSH
+# Install oh my zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -svf ~/.dotfiles/zsh/zshrc ~/.zshrc
 
 # TMUX
@@ -52,8 +55,8 @@ echo "Fill out your Vim Passwords in the ~/.vimpasswords file"
 
 ## VSCode
 ln -svf ~/.dotfiles/vscode/* ~/Library/Application\ Support/Code/User/.
-~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension aws-scripting-guy.cform
-~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension PeterJausovec.vscode-docker
-~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode.Go                                                                                  │~
-~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension redhat.vscode-yaml                                                                            │~
-~/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension vscodevim.vim
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension aws-scripting-guy.cform
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension PeterJausovec.vscode-docker
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension ms-vscode.Go                                                                                  │~
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension redhat.vscode-yaml                                                                            │~
+/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --install-extension vscodevim.vim
