@@ -15,6 +15,7 @@ mkdir -p ~/.config
 #brew cask install --force spotify
 #brew install zsh
 #brew install tmux
+#brew install kube-ps1
 ## Slate
 #ln -svf ~/.dotfiles/slate/slate ~/.slate
 ## Karabiner
