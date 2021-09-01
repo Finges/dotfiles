@@ -6,24 +6,24 @@ mkdir -p ~/.config
 
 ### OSX Only ###
 ## Install Apps
-#brew cask install --force iterm2
-#brew cask install --force alfred
-#brew cask install --force  visual-studio-code
-#brew cask install --force karabiner-elements
-#brew cask install --force slate
-#brew cask install --force divvy
-#brew cask install --force spotify
-#brew install zsh
-#brew install tmux
-#brew install kube-ps1
-## Slate
-#ln -svf ~/.dotfiles/slate/slate ~/.slate
-## Karabiner
-#ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
+brew install --force iterm2
+brew install --force alfred
+brew install --force visual-studio-code
+brew install --force karabiner-elements
+brew install --force slate
+brew install --force divvy
+brew install --force spotify
+brew install zsh
+brew install tmux
+brew install kube-ps1
+# Slate
+ln -svf ~/.dotfiles/slate/slate ~/.slate
+# Karabiner
+ln -svf ~/.dotfiles/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
 
 #### Symlinks
 # GIT
-# ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -svf ~/.dotfiles/git/gitconfig ~/.gitconfig
 
 # ZSH
 # Install oh my zsh
